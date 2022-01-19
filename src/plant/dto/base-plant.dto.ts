@@ -1,7 +1,7 @@
 export class BasePlantDto{
-    userID: string
-    resultID: string
-    cameraBoxID: string
+    userId: string
+    resultId: string
+    cameraBoxId: string
     fotoPath: string
-    locatie: string
+    location: string
 }

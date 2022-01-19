@@ -7,8 +7,7 @@ import { Result, ResultDocument } from './schema/result.schema';
 
 @Injectable()
 export class ResultService {
-    constructor (@InjectModel(Result.name) 
-    private readonly model: Model<ResultDocument>){}
+    constructor (@InjectModel(Result.name) private readonly model: Model<ResultDocument>){}
 
     async findAll(): Promise<Result[]>{
         return await this.model.find()
