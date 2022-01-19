@@ -1,3 +1,5 @@
 import { BaseResultDto } from "./base-result.dto";
 
-export class CreateResultDto extends BaseResultDto{}
+export class CreateResultDto extends BaseResultDto{
+    createdAt: Date;
+}
