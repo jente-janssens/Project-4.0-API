@@ -4,11 +4,13 @@ import { AppService } from './app.service';
 import {MongooseModule } from '@nestjs/mongoose';
 import { ResultModule } from './result/result.module';
 import { UserModule } from './user/user.module';
+import { PlantModule } from './plant/plant.module';
 
 @Module({
   imports: [MongooseModule.forRoot('mongodb+srv://Admin:k2thmb64IwnKpiab@projectresultaten.aascr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'), 
   UserModule,
-  ResultModule],
+  ResultModule,
+  PlantModule],
   controllers: [AppController],
   providers: [AppService],
 })

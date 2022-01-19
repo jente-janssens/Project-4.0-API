@@ -27,8 +27,8 @@ export class User {
     @Prop()
     completedAt?: Date;
 
-    @Prop({ required: true })
-    createdAt: Date;
+    @Prop()
+    createdAt?: Date;
 
     @Prop()
     deletedAt?: Date;
