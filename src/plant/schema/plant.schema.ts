@@ -1,20 +1,20 @@
 import {Prop, Schema, SchemaFactory} from "@nestjs/mongoose";
-import * as mongoose from "mongoose";
-import { Result } from "src/result/schema/result.schema";
-import { User } from "src/user/schema/user.schema";
 
 export type PlantDocument = Plant & Document;
-@Schema()export class Plant {
+@Schema()
+export class Plant {
     @Prop({required: true})
-    userID: string;
+    userId: string;
+
     @Prop()
-    resultID?: string;
+    resultId?: string;
+
     @Prop()
-    cameraBoxID?: string;
+    cameraBoxId?: string;
     @Prop({required: true})
     fotoPath: string;
     @Prop({required: true})
-    locatie: string;
+    location: string;
     @Prop()
     completedAt?: Date;
     @Prop()
