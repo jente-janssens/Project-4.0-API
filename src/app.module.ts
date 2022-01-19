@@ -6,7 +6,9 @@ import { ResultModule } from './result/result.module';
 import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb+srv://Admin:k2thmb64IwnKpiab@projectresultaten.aascr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'), UserModule],
+  imports: [MongooseModule.forRoot('mongodb+srv://Admin:k2thmb64IwnKpiab@projectresultaten.aascr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'), 
+  UserModule,
+  ResultModule],
   controllers: [AppController],
   providers: [AppService],
 })
