@@ -7,7 +7,10 @@ import { UserModule } from './user/user.module';
 import { CameraBoxModule } from './camera-box/camera-box.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb+srv://Admin:k2thmb64IwnKpiab@projectresultaten.aascr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'), UserModule, CameraBoxModule],
+  imports: [MongooseModule.forRoot('mongodb+srv://Admin:k2thmb64IwnKpiab@projectresultaten.aascr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'), 
+  UserModule,
+  ResultModule,
+  CameraBoxModule],
   controllers: [AppController],
   providers: [AppService],
 })
