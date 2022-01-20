@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'APIbotanic'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E8998343718B4E149DD4E01E27C34493 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C73A5FEFC8484CB6AF4C31F7A3857524 }}
           package: .
