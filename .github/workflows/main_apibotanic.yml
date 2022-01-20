@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Apibotanic'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AC7E344396CD46FBAFD5AFE009041FFF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DBA2BFED1FF2437A96CAA68CE8DAEBA8 }}
           package: .
