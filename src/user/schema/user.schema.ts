@@ -33,5 +33,5 @@ export class User {
     @Prop()
     deletedAt?: Date;
 }
-
+// Export UserSchema
 export const UserSchema = SchemaFactory.createForClass(User);
